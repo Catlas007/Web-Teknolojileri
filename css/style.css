@@ -1,0 +1,255 @@
+/*-- Reset --*/
+html, body {
+  overflow-x: hidden;
+  height: 100%;
+  width: 100%;
+  font-family: "Duru Sans", sans-serif;
+  font-size: large;
+}
+
+
+/*==============STİLLER============*/
+
+
+
+
+/*============= NAV =============*/
+
+.navbar-toggler-icon {
+	background-image: url('data:image/svg+xml;charset=utf8,%3Csvg viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath stroke="rgba%28255, 255, 255, 0.5%29" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22"%3E%3C/path%3E%3C/svg%3E');
+        }
+.navbar-brand img{
+	heighr: 2.0rem;
+}
+.navbar {
+	Background: linear-gradient(to right, #f2f2f2, #107248);
+	font-size: 1.1rem;
+	text-transform: uppercase;
+	letter-spacing: .1rem;
+	box-shadow: 0 .5rem .5rem rgba(0, 0, 0, .5);
+}
+.nav.item {
+	padding: .4rem;
+}
+.nav-link{
+	color: black!important;
+}
+.nav-link:hover{
+	color: 1880E2!important;
+}
+
+/*============= İletişim Formu =============*/
+
+form {
+        max-width: 400px;
+        margin: 0 auto;
+    }
+    input[type="email"], textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+    input[type="submit"], input[type="button"] {
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+    }
+    input[type="submit"]:hover, input[type="button"]:hover {
+        background-color: #0056b3;
+    }
+
+
+/*============= Login Yapısı =============*/
+
+#Loginbody {
+    position: relative;
+    background-color: lightblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.login-block {
+    text-align: left;
+    position: relative;
+    width: 100%;
+    background-color: #fff;
+    grid-template-columns: 1fr 2fr;
+}
+
+#ortaladiv {
+    text-align: center;
+}
+
+#Girisonaylabuton {
+    margin-top: 3%;
+    background-color: black;
+    color: white;
+}
+
+footer {
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    padding-bottom: 4%;
+    height: auto;
+}
+
+#icon1 {
+    display: inline-block;
+    width: 30px;
+    font-size: 18px;
+    color: coral;
+}
+
+
+
+/*============= CAROUSEL =============*/
+
+/*===========Slider=============*/
+.slider-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .slider {
+            width: 100%;
+            max-width: 300px;
+            margin: 0 auto;
+        }
+
+
+
+
+/*---Carousel Değişme Hızı --*/
+
+.carousel-item-next,
+.carousel-item-prev,
+.carousel-item.active {
+	transition: transform 2.0s ease;
+}
+
+.carousel-indicators li{
+	windth: 80px;
+	height: 10px;
+}
+
+
+/*-- Carousel İçeriği --*/
+
+
+/*============= SOSYAL MEDYA BARI =============*/
+
+.jumbotron {
+  background: linear-gradient(to right, #f2f2f2, #FBFBFB);
+  padding: 1rem 0 .5rem;
+  margin-bottom: 0;
+  border-radius: 0;
+  box-shadow: 0 .5rem .5rem rgba(0, 0, 0, .1);
+}
+
+
+/*============= COLUMN CONTENT =============*/
+
+
+
+/*===== ARKA PLAN FOTOĞRAFI =====*/
+
+.fixed-background {
+  padding: 12rem 0;
+  border-top: .05rem solid black;
+  border-bottom: .05rem solid black;
+  margin-bottom: 2px;
+  height: 100vh; /*-- remove --*/
+  overflow: hidden;
+}
+.fixed {
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/3/38/Istanbul-BlackNWhite.jpg");
+  position: fixed;
+}
+
+
+/*============= FOOTER =============*/
+
+
+
+/*============= SOCKET =============*/
+
+
+
+/*============= MEDYA SORGULARI =============*/
+
+/* 1199px altı cihazlar (xl) */
+@media (max-width: 1199.98px) {
+
+}
+/* 992px altı cihazlar (xl) */
+@media (max-width: 991.98px) {
+
+}
+/* 768px altı cihazlar (md) */
+@media (max-width: 767.98px) {
+
+}
+/* 576px altı cihazlar (sm) */
+@media (max-width: 575.98px) {
+
+}
+
+
+/*============ BOOTSTRAP BREAK POINTS:
+
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+
+=============*/
+
+/*-- Bootstrap Mobile Gutter Fix --*/
+.row, .container-fluid {
+  margin-left: 0px !important;
+  margin-right: 0px !important;
+}
+
+/*-- Fixed Background Image --*/
+.fixed-background {
+  position: relative;
+  width: 100%;
+  z-index: 1000!important;
+}
+.fixed-wrap {
+  clip: rect(0, auto, auto, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -999 !important;
+}
+.fixed {
+  z-index: -999!important;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  will-change: transform;
+}

@@ -1,0 +1,62 @@
+function sendForm() {
+    var email = document.getElementById("email").value.trim();
+    var message = document.getElementById("message").value.trim();
+
+	var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(email)) {
+        alert("Lütfen geçerli bir e-mail adresi giriniz.");
+        return;
+    }
+
+
+    if ( message === "") {
+        alert("Lütfen Mesaj kutucuğunu doldurunuz.");
+        return;
+    }
+
+    var formData = {
+        email: email,
+        message: message
+    };
+    localStorage.setItem("formData", JSON.stringify(formData));
+
+    window.location.href = "gonderilenFormlar.html";
+}
+
+function clearForm() {
+    document.getElementById("email").value = "";
+    document.getElementById("message").value = "";
+}
+
+
+
+
+
+
+window.onload = function() {
+	// Kaydedilen form içeriğini lokal olarak sakla
+    var formData = JSON.parse(localStorage.getItem("formData"));
+
+
+	//Kaydedilen içeriği göster
+    if (formData) 
+	{
+        var sentDataElement = document.getElementById("sentData");
+        sentDataElement.innerHTML = `
+            <p>EMAİL: <br><br> ${formData.email}<hr></p>
+            <p>MESAJINIZ: <br><br> ${formData.message}<hr></p>
+        `;
+    } 
+	
+	else 
+	{
+		//Form içeriği boş ise
+        var sentDataElement = document.getElementById("sentData");
+        sentDataElement.innerHTML = "<p>Form gönderilemedi</p>";
+    }
+};
+
+function goBack() {
+    // Navigate back to the homepage
+    window.location.href = "Anasayfa(Hakkimda).html";
+}
