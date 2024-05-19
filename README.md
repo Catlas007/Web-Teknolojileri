@@ -1,7 +1,15 @@
 # Web-Teknolojileri
 
-Proje Sahibi: Aybüke Gökçe Yavaş
+Aybüke Gökçe Yavaş | B221210371
+======================================================================
+Projede Kullanılan Dosya Tipleri:
 
-Proje Amacı: Kendimi ve memleketimi tanıtan bir web sitesi tasarlamak
+HTML
+CSS
+JAVASCRİPT
+PHP
+BOOTSTRAP
+==============================================================
+PROJE AMACI:
 
-Ön Açıklama: Projede ilerledikçe projenin tamamlanması için atılan adımlar bu dosyaya açıklamalarıyla eklenecek.
+Beni ve geldiğim şehri tanıtan öğeler içeren bir web sitesi tasarımı.
