@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<html lang="tr">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title> Ana Sayfa </title>
+	<link rel="shortcut icon" href="img/sekmeIkonu.png">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Duru+Sans&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/form-style.css">
+</head>
+
+<body>
+
+	<script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+	<script src="css/iletişim.css"></script>
+	
+	<div id="navigation-sticky">
+	
+	
+		<nav class="navbar bg-light navbar-expand-lg sticky-top">
+			<div class="container">
+		
+				<a href ="AnaSayfa(Hakkimda).html" class="navbar-brand">
+				<img src="img/logo.png" alt="A.Gökçe" title="A.Gökçe">
+				</a>
+				
+				<button class="navbar-toggler" type="button" 
+					data-toggle="collapse" data-target="#navbarResponsive"> 
+				<span class="navbar-toggler-icon"></span>
+				</button>
+				
+				<div class="collapse navbar-collapse" id="navbarResponsive">
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item"><a href="AnaSayfa(Hakkimda).html" class="nav-link">Anasayfa</a></li>
+						<li class="nav-item"><a href="ozgecmis.html" class="nav-link">Özgeçmiş</a></li>
+						<li class="nav-item"><a href="sehrim.html" class="nav-link">Şehrim</a></li>
+						<li class="nav-item"><a href="Mirasimiz.html" class="nav-link">Mirasımız</a></li>
+						<li class="nav-item"><a href="IlgiAlanlari.html" class="nav-link">Hobiler</a></li>
+						<li class="nav-item"><a href="Login.html" class="nav-link">Login</a></li>
+						<li class="nav-item"><a href="Iletisim.html" class="nav-link">İletişim</a></li>
+					</ul>
+				</div>
+			</div>
+		
+		</nav>
+	
+			<h1> <hr> İLETİŞİM FORMU </H1
+			<form id="emailMessageForm">
+			<input type="email" id="email" name="email" placeholder="Your Email">
+			<textarea id="message" name="message" placeholder="Your Message"></textarea>
+			<input type="button" value="Clear" onclick="clearForm()">
+			<input type="button" value="Send" onclick="sendForm()">
+			</form>
+
+		
+			
+    </div>
+	
+	
+</body>
+</html>
